@@ -1,0 +1,96 @@
+:root{
+    --primario:#F9AF46;
+    --fondo:#F4F1DA;
+    --secundario: rgba(252, 210, 123, 0.6);
+    --blanco: #fff;
+    --negro:#000;
+
+    --fuente-principal:'Be Vietnam Pro', sans-serif;
+}
+
+/*Script de Paul Irish para trabajar mejor con margin y padding (no tener que estar calculando las diferencias*/
+html{
+    box-sizing: border-box;
+    font-size: 62.5%; /*Para que un rem valga 10px*/
+}
+*, *:before, *:after{
+    box-sizing: inherit;
+
+}
+
+/** Globales*/
+body{
+    background-color: var(--fondo);
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+p{
+    font-size: 1.8rem;
+    font-family:Arial, Helvetica, sans-serif;
+    color: var(--negro);
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    max-width: 60%;
+}
+
+.contenedor{
+    max-width: 100rem;
+    margin: 0 auto;
+}
+
+h1, h2, h3{
+    text-align: center;
+    color: var(--negro);
+    font-family: var(--fuente-principal);
+}
+
+h1{
+    font-size: 4rem;
+}
+
+h2{
+    font-size: 3.2rem;
+}
+
+h3{
+    font-size: 2.4rem;
+}
+
+
+/*Header*/
+.header{
+    display: flex;
+    justify-content: center;
+    
+}
+.header__logo{
+    margin: 3rem 0;
+}
+
+/* Navegacion */
+.navegacion{
+    background-color: var(--secundario);
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navegacion__enlace{
+    font-family:var(--fuente-principal);
+    color: var(--negro);
+    font-size: 2rem;
+    margin-right: 3rem;
+}
+
+.content-cake{
+    max-width: 60%;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+}
